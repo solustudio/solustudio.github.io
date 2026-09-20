@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solu Studio</title>
+<meta name="description" content="Solu Studio builds small, private apps for everyday life.">
+<style>
+  :root {
+    --bg: #070c1a; --card: #0f1629; --line: rgba(148,178,255,.12);
+    --text: #e8eefc; --muted: #8b97b5; --accent: #4c8dff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 72px 20px 80px; }
+  h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: -.5px; }
+  p.lead { color: var(--muted); font-size: 17px; margin: 0 0 40px; }
+  .card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--card); border: 1px solid var(--line); border-radius: 20px;
+    padding: 22px 24px; margin-bottom: 14px;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h2 { margin: 0 0 6px; font-size: 19px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  .dot { display: inline-block; width: 34px; height: 34px; border-radius: 11px;
+         background: linear-gradient(135deg, #3b82f6, #0891b2); margin-bottom: 12px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <span class="dot"></span>
+    <h1>Solu Studio</h1>
+    <p class="lead">Small, private apps for everyday life. Your data stays yours.</p>
+
+    <a class="card" href="./money/">
+      <h2>Solu Money</h2>
+      <p>Accounts, debts and budgets in one place. Works offline, and the cloud copy is
+         end-to-end encrypted — only you can read it.</p>
+    </a>
+
+    <footer>
+      Contact: <a href="mailto:solustudio.app@gmail.com">solustudio.app@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
