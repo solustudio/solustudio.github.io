@@ -51,7 +51,7 @@
     <li>These records are deleted together with your account. Records of payments themselves are kept by Google under its own terms, as required for tax and accounting.</li>
     </ul>
     <h2>4. Crash reports</h2>
-    <p>When the app hits an error it writes a short technical note. You can see everything it recorded in Settings → Data → Report a problem, and clear it there. If sending is enabled in a release, those same technical notes go to our error-tracking service (Sentry, EU servers). They contain no amounts, names, notes or e-mail addresses.</p>
+    <p>When the app hits an error it writes a short technical note and sends it to our error-tracking service (Sentry, servers in Germany). The note holds the error text, the place in the code, the app version, the phone model and the system version — no amounts, names, notes, e-mail addresses or anything you entered. You can see everything the app recorded in Settings → Data → Report a problem, and clear it there.</p>
     <h2>5. Trading 212 (optional)</h2>
     <p>If you connect Trading 212, the app stores your API key with your own data, so it comes back on a new phone. With cloud sync on, it travels inside the <strong>end-to-end encrypted</strong> copy, which we cannot read. The app sends the key directly to Trading 212&#x27;s servers to read your portfolio value. We never receive the key or your portfolio data. Give the key read-only rights, and revoke it in Trading 212 at any time.</p>
     <h2>6. What we do NOT do</h2>
@@ -84,7 +84,7 @@
     <li><strong>Хмара (за бажанням, у преміумі):</strong> при вході через Google ми отримуємо лише email та ідентифікатор користувача. У хмарі (Supabase) лежить зашифрована копія (AES-256-GCM). Ключ шифрування створюється з твого пароля на телефоні. Якщо втратити і пароль, і код відновлення, хмарну копію не відновить ніхто.</li>
     <li><strong>Покупки й преміум:</strong> оплату повністю обробляє Google Play, ми не бачимо даних картки. Ми отримуємо лише, який тариф куплено, чи він активний, і токен покупки для перевірки. Щоб преміум переходив між телефонами, це підтвердження зберігається разом з ідентифікатором акаунта в нашій базі (Supabase, ЄС). Подарований преміум записується туди ж: ідентифікатор, дата закінчення й коротка нотатка. Усе це видаляється разом з акаунтом.</li>
     <li><strong>Trading 212:</strong> API-ключ зберігається разом з твоїми даними, тож повертається на новому телефоні; у хмару він потрапляє лише в зашифрованій копії, яку ми не можемо прочитати. Додаток передає його напряму на сервери Trading 212.</li>
-    <li><strong>Звіти про помилки:</strong> лише технічні дані (модель телефона, версія системи, текст помилки). Їх видно в Налаштування → Дані → Повідомити про проблему.</li>
+    <li><strong>Звіти про помилки:</strong> надсилаються в сервіс Sentry (сервери в Німеччині) і містять лише технічні дані: текст помилки, місце в коді, версію додатка, модель телефона й версію системи. Сум, імен, нотаток і пошти там немає. Усе, що записав додаток, видно в Налаштування → Дані → Повідомити про проблему.</li>
     <li><strong>Чого немає:</strong> продажу даних, стеження за вами й аналітики вашої поведінки.</li>
     <li><strong>Твої права:</strong> експорт (Налаштування → Дані), видалення акаунта (Налаштування → Хмара), запит на пошту <a href="mailto:solustudio.app@gmail.com.">solustudio.app@gmail.com.</a> Скаргу можна подати до органу захисту даних (у Польщі це UODO).</li>
     </ul>
